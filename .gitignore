@@ -18,6 +18,7 @@ deploying-ai-env
 *.secrets
 *.secrets_*
 
+
 # AI
 .claude/
 .compound-engineering/*
