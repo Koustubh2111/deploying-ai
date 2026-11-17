@@ -327,13 +327,6 @@ def assignment_agent():
     # Compile the agent
     agent = agent_builder.compile()
 
-    # Save image
-    agent_graph =  agent.get_graph(xray=True).draw_mermaid_png()
-    output_file_path = os.path.join("./agent_graph.png")
-    with open(output_file_path, "wb") as f:
-        f.write(agent_graph)
-    print(f"Graph saved as {output_file_path}")
-
     return agent
    
    
